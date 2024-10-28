@@ -1,0 +1,2 @@
+pip install python-dotenv
+pip install iam_rolesanywhere_session
