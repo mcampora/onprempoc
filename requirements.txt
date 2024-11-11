@@ -1,2 +1,4 @@
+source ~/.python3/bin/activate
+
 pip install python-dotenv
 pip install iam_rolesanywhere_session
