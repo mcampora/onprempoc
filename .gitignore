@@ -1,2 +1,7 @@
 pca/
 .env
+
+setup/*.txt
+setup/*.arn
+setup/*.csr
+setup/*.pem

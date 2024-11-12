@@ -1,0 +1,12 @@
+{
+  "KeyAlgorithm": "RSA_2048",
+  "SigningAlgorithm": "SHA256WITHRSA",
+  "Subject": {
+    "Country": "US",
+    "Organization": "EBSCO",
+    "OrganizationalUnit": "EA",
+    "State": "MA",
+    "CommonName": "EBSCO onprem POC",
+    "Locality": "Boston"
+  }
+}
