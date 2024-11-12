@@ -1,6 +1,5 @@
-# assumes that the identity used has permissions 
-# to create a private certificate authority
-# and a few other things
+# one-off script used to create a certificate authority in one account/region
+# need permissions to create a private certificate authority and a few other things
 
 # create the authority
 aws acm-pca create-certificate-authority \
