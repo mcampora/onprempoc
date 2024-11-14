@@ -21,3 +21,6 @@ The profile/role is attached to the trust anchor using a policy condition,
 the trust anchor is attached to the private certificate authority.  
 
 You can also attach the profile/role to the certificate using another condition (not yet demonstrated).  
+At the moment the role is attached to a very permissive permission to access secretsmanager it should be reduced to offer the least privileges.  
+
+You can test session opening with the provided scipt (test.py).  
