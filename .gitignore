@@ -6,4 +6,5 @@ setup/*.arn
 setup/*.csr
 setup/*.pem
 
-setup/certs**
+setup/certs/*
+test.cab.local/*

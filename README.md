@@ -12,3 +12,12 @@ To make it work, you have to provision:
     - CERT_PATH="./pca/certificate.txt"
     - PRIVATE_KEY_PATH="./pca/private_key.txt"
     - PRIVATE_KEY_PASSPHRASE="my_secret"
+
+Use the provided scripts to automate these steps:
+- setup/01-setup-pca.sh
+- setup/02-create-cert.sh
+
+The profile/role is attached to the trust anchor using a policy condition,  
+the trust anchor is attached to the private certificate authority.  
+
+You can also attach the profile/role to the certificate using another condition (not yet demonstrated).  
