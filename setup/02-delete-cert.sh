@@ -11,8 +11,9 @@ PROFILE_ID=$( cat ${OUTPUT}/profile.id )
 aws rolesanywhere delete-profile --profile-id ${PROFILE_ID} > /dev/null
 
 # delete the role
-S3_READ_ACCESS="arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
-aws iam detach-role-policy --role-name ${FLAT_NAME} --policy-arn ${S3_READ_ACCESS}
+#S3_READ_ACCESS="arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+SM_ACCESS="arn:aws:iam::aws:policy/SecretsManagerReadWrite"
+aws iam detach-role-policy --role-name ${FLAT_NAME} --policy-arn ${SM_ACCESS}
 aws iam delete-role --role-name ${FLAT_NAME}
 
 # delete the trust anchor
