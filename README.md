@@ -26,9 +26,11 @@ Use the provided scripts to automate these steps:
 
 The profile/role is attached to the trust anchor using a policy condition,  
 the trust anchor is attached to the private certificate authority.  
-
 You can also attach the profile/role to the certificate using another condition (not yet demonstrated).  
 At the moment the role is attached to a very permissive policy it should be reduced to offer access only to specific secrets (ie. least privileges).  
+
+My POC is based on the idea that each client gets a dedicated certificate, trust anchor, profile, role.  
+We can reuse permissions sets across roles.  
 
 ## Test
 
